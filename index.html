@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>URL Randomizer</title>
+    <link rel="stylesheet" href="style.css">                                          
+</head>
+<body>
+
+    <div class="container">
+        <h1>URL Randomizer</h1>
+
+        <!-- Display Random Selection Above the Button -->
+        <div id="output"></div>
+        <button id="randomizeBtn" onclick="pickRandomUrl()">Randomize</button>
+
+        <!-- Input Section for URLs -->
+        <input type="text" id="urlInput" placeholder="Enter URL or Text">
+        <button onclick="addUrl()">Add</button>
+
+        <!-- URL List Section -->
+        <ul id="urlListContainer"></ul>
+
+        <!-- Import/Export Section (At the Bottom) -->
+        <div class="import-export">
+            <button onclick="exportUrls()">Export List</button>
+            <input type="file" id="importFile" onchange="importUrls(event)" />
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
+
+
+
+
+
